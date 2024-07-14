@@ -5,7 +5,12 @@ Parameters:
   DomainName:
     Type: String
     Description: The domain name.
-    Default: webapp.example.com
+    Default: webapp.kangacok.com
+
+  BucketName:
+    Type: String
+    Description: The bucket name.
+    Default: kangacook
 
   PriceClass:
     Type: String
@@ -74,6 +79,7 @@ Resources:
 
   Bucket:
     Type: AWS::S3::Bucket
+    BucketName: !Ref BucketName
     DeletionPolicy: Retain
     Properties:
       BucketEncryption:
