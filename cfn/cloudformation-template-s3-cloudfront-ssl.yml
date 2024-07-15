@@ -5,7 +5,7 @@ Parameters:
   DomainName:
     Type: String
     Description: The domain name.
-    Default: kangacook.bookingeventz.com
+    Default: kangacook.rivalrygamez.com
 
   PriceClass:
     Type: String
@@ -24,7 +24,8 @@ Resources:
       DomainName: !Ref DomainName
       DomainValidationOptions:
         - DomainName: !Ref DomainName
-          ValidationDomain: !Ref DomainName
+          #ValidationDomain: !Ref DomainName
+          HostedZoneId: Z0005999TFKUL0X1TWG3
       ValidationMethod: DNS
 
   CloudFrontDistribution:
