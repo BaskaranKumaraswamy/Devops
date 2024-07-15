@@ -5,12 +5,7 @@ Parameters:
   DomainName:
     Type: String
     Description: The domain name.
-    Default: webapp.kangacok.com
-
-  BucketName:
-    Type: String
-    Description: The bucket name.
-    Default: kangacook
+    Default: kangacook.bookingeventz.com
 
   PriceClass:
     Type: String
